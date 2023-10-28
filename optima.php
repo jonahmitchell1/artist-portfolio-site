@@ -7,7 +7,7 @@ These objects are reinterpreted through their refracted components to reveal aes
 EXHIBITED AT:   Tranas at the Fringe, Film Festival, Sweden [July 2022]
 music: August by Tom la Haine';
 $artist_name = 'Max Mitchell';
-$instagram = '';
+$instagram = 'https://www.instagram.com/_max.ink/';
 
 $images = 'projects/optima/images/';
 

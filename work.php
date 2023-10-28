@@ -1,16 +1,16 @@
 <?php
 $artist_name = 'Max Mitchell';
-$instagram = '';
+$instagram = 'https://www.instagram.com/_max.ink/';
 $project_titles = array(
-'a-space-lost.php',
-'collage.php',
-'design.php',
-'escapism.php',
-'optima.php',
-'photography.php',
-'playground-mentality.php',
-'printmaking-illustration.php',
-'scanography.php',
+'A SPACE LOST',
+'COLLAGE',
+'DESIGN',
+'ESCAPISM',
+'O P T I M A',
+'PHOTOGRAPHY',
+'PLAYGROUND MENTALITY',
+'PRINTMAKING + ILLUSTRATION',
+'SCANOGRAPHY',
 );
 $project_links = array(
 'a-space-lost.php',
@@ -44,16 +44,16 @@ $project_cover_photo = array(
     echo ("<title>" . $artist_name . "</title>");
     ?>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="work_redirects.js"></script>
+    <script src="work_redirect.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
             <table class="table">
                 <td id="menu">
-                    <a href='about.html' class="menu-item">ABOUT</a>
-                    <a href='work.html' class="menu-item">WORK</a>
-                    <a href='contact.html' class="menu-item">CONTACT</a>
+                    <a href='about.php' class="menu-item">ABOUT</a>
+                    <a href='work.php' class="menu-item">WORK</a>
+                    <a href='contact.php' class="menu-item">CONTACT</a>
                 </td>
                 <td id="logo">
                     <img src="general\logo.png" class="logo" alt="Max Mitchell" style="aspect-ratio: auto; width: 25vh; flex-grow: 3;">
@@ -69,7 +69,8 @@ $project_cover_photo = array(
                 <?php
                 for ($i = 0; $i < count($project_titles); $i++)
                 {
-                    echo("  <div class='project' onclick='redirect_window('" . $project_links[$i] . "')'>\n
+                    $redirect_command = "redirect_window(\"" . $project_links[$i] . "\")";
+                    echo("  <div class='project' onclick='" . $redirect_command . "'>\n
                             <img src='" . $project_cover_photo[$i] . "' class='project-gallery-image'>\n
                             <div class='overlay'>\n
                             <div class='project-desc'>" . $project_titles[$i] . "</div>\n

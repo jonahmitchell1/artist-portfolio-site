@@ -7,7 +7,7 @@ It promotes the perception of our environment [found objects, photos] as open to
 music: Wish by Blood Orange
 Klavierwerke by James Blake';
 $artist_name = 'Max Mitchell';
-$instagram = '';
+$instagram = 'https://www.instagram.com/_max.ink/';
 
 $images = 'projects/playground-mentality/images/';
 

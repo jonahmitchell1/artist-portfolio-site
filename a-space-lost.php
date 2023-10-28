@@ -4,7 +4,7 @@ $description = 'A SPACE LOST
 A visual exploration of ‘Lost’ as a quality or description, what makes something feel lost. A series of images connected by a imaginary, utopian world.
 Consistent blue buildings, green floors and red accents give the sense of moving through a city, linked by architectural elements. Guided by indication of past events through recurring objects that give hints to a narrative, an unknown story of someone, or of those who inhabit the city.';
 $artist_name = 'Max Mitchell';
-$instagram = '';
+$instagram = 'https://www.instagram.com/_max.ink/';
 
 $images = 'projects/a-space-lost/images/';
 ?>

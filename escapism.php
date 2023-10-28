@@ -3,7 +3,7 @@ $title = 'Escapism';
 $description = 'A project on the brief of a visual 'personal manifesto'. It takes the form of these illustrated representations of space and architecture within a void-like environment. The work depicts a psychogeographical concept of interpreting ones mental space as a physical space, therefore seperating oneself from it, as a metaphorical tool for navigating ones mental battles.
 Hypothetically challenging the pavements and staircases, the images suggest a creation of ones own map, a reaction to the physical confines of the urban environment. The concept of world-building is pushed further by an unknown language, supposedly a new understanding of these personal, mental spaces that supercedes human language. This again reflects notions of spacial engagement present in parkour, in which the physical challenges emulate emotional or tangible challenges faced in every day life.';
 $artist_name = 'Max Mitchell';
-$instagram = '';
+$instagram = 'https://www.instagram.com/_max.ink/';
 
 $images = 'projects/escapism/images/';
 ?>

@@ -2,7 +2,7 @@
 $title = 'Collage';
 $description = '';
 $artist_name = 'Max Mitchell';
-$instagram = '';
+$instagram = 'https://www.instagram.com/_max.ink/';
 
 $images = 'projects/collage/images/';
 ?>

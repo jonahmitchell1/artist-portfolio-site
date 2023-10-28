@@ -2,7 +2,7 @@
 $title = 'Scanography';
 $description = 'Various experimental image-making with a flatbed scanner and digital augmentation. using found objects, illustration and photography. Playing with pattern, texture and refraction, embracing the unpredictability of collaboration between the computerised automation of scanography, and analogue human input.';
 $artist_name = 'Max Mitchell';
-$instagram = '';
+$instagram = 'https://www.instagram.com/_max.ink/';
 
 $images = 'projects/scanography/images/';
 ?>

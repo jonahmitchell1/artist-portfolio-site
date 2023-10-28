@@ -2,7 +2,7 @@
 $title = 'Printmaking + Illustration';
 $description = '';
 $artist_name = 'Max Mitchell';
-$instagram = '';
+$instagram = 'https://www.instagram.com/_max.ink/';
 
 $images = 'projects/printmaking-illustration/images/';
 ?>

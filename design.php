@@ -2,7 +2,7 @@
 $title = 'Design';
 $description = 'Various design mock ups for potential clothing.';
 $artist_name = 'Max Mitchell';
-$instagram = '';
+$instagram = 'https://www.instagram.com/_max.ink/';
 
 $images = 'projects/design/images/';
 ?>

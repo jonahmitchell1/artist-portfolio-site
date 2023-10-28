@@ -8,6 +8,7 @@ f = open('general/artist-name.txt', 'r')
 artist_name = f.read()
 f.close()
 
+
 def create_about_page():
     f = open('general/artist-description.txt', 'r')
     artist_description = f.read()
@@ -35,7 +36,7 @@ def create_work_page(projects):
         f = open('projects/' + project + '/title.txt', 'r')
         title = f.read()
         f.close()
-        str += "'" + project + ".php',\n"
+        str += "'" + title.upper() + "',\n"
     str += ");\n"
     
     str += "$project_links = array(\n"
@@ -60,7 +61,6 @@ def create_work_page(projects):
     # Create/update php work page
     f = open('work.php', 'w')
     f.write(str)
-
 
 def create_project_page(project_name):
     # Get title and description
@@ -95,6 +95,28 @@ def create_project_page(project_name):
     f = open(project_name + '.php', 'w')
     f.write(str)
 
+def create_contact_page():
+    f =open('general/email.txt', 'r')
+    email = f.read()
+    f.close()
+
+    f =open('general/vimeo.txt', 'r')
+    vimeo = f.read()
+    f.close()
+
+    str = "<?php\n$artist_name = '" + artist_name + "';\n$email = '" + email + "';\n$instagram = '" + instagram + "';\n$vimeo = '" + vimeo + "';\n?>\n"
+    
+    # add boilerplate php for page generation
+    f = open('general/contact-boilerplate.php', 'r')
+    boilerplate = f.read()
+    f.close()
+
+    str += boilerplate
+
+    # Create/update php page for project
+    f = open('contact.php', 'w')
+    f.write(str)
+
 if __name__ == '__main__':
     # Generate about page
     create_about_page()
@@ -104,3 +126,5 @@ if __name__ == '__main__':
     create_work_page(entries)
     for entry in entries:
         create_project_page(entry)
+
+    create_contact_page()

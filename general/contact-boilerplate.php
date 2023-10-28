@@ -28,22 +28,16 @@
         </header>
 
         <div class="page-content">
-            <div class="projects">
-                <?php
-                for ($i = 0; $i < count($project_titles); $i++)
-                {
-                    $redirect_command = "redirect_window(\"" . $project_links[$i] . "\")";
-                    echo("  <div class='project' onclick='" . $redirect_command . "'>\n
-                            <img src='" . $project_cover_photo[$i] . "' class='project-gallery-image'>\n
-                            <div class='overlay'>\n
-                            <div class='project-desc'>" . $project_titles[$i] . "</div>\n
-                            </div>\n
-                            </div>\n\n");
-                }
-                ?>
-            </div>
+            <h1>CONTACT</h1>
+            <?php
+            echo(  "<h2>" . $artist_name . "</h2>\n
+                    <p><a href='" . $instagram . "' target='_blank'>INSTAGRAM</a></p>\n
+                    <p>E-MAIL: <a href='mailto:" . $email . "'>" . $email . "</a></p>
+                    <p>VIMEO: <a href='" . $vimeo . "' target='_blank'>" . $vimeo . "</a></p>
+            ");
+            ?>
         </div>
-
+      
         <footer>
             <?php
                 echo("<p>" . $artist_name . " " . date("Y") . "</p>");
