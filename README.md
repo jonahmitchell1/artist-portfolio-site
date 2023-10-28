@@ -1,6 +1,9 @@
 # artist-portfolio-site
 Portfolio website for an artist with dynamic page updates.
 
+# Directions for Use:
+Simply add your projects in the format defined below, then run the *update-website.py* file to automaticallt generate each PHP page for you!
+
 # Folder Structure for Website Generation:
 
 ## general
