@@ -26,6 +26,42 @@ def create_about_page():
     f = open('about.php', 'w')
     f.write(str)
 
+def create_work_page(projects):
+    page = open('work.php', 'w')
+    str = "<?php\n$artist_name = '" + artist_name + "';\n$instagram = '" + instagram + "';\n"
+
+    str += "$project_titles = array(\n"
+    for project in projects:
+        f = open('projects/' + project + '/title.txt', 'r')
+        title = f.read()
+        f.close()
+        str += "'" + project + ".php',\n"
+    str += ");\n"
+    
+    str += "$project_links = array(\n"
+    for project in projects:
+        str += "'" + project + ".php',\n"
+    str += ");\n"
+
+    str += "$project_cover_photo = array(\n"
+    for project in projects:
+        str += "'projects/" + project + "/images/main.jpg',\n"
+    str += ");\n"
+
+    str += "?>\n"
+
+    # add boilerplate php for page generation
+    f = open('general/work-boilerplate.php', 'r')
+    boilerplate = f.read()
+    f.close()
+
+    str += boilerplate
+
+    # Create/update php work page
+    f = open('work.php', 'w')
+    f.write(str)
+
+
 def create_project_page(project_name):
     # Get title and description
     f = open('projects/' + project_name + '/title.txt', 'r')
@@ -65,5 +101,6 @@ if __name__ == '__main__':
 
     # Find all projects
     entries = os.listdir('projects/')
+    create_work_page(entries)
     for entry in entries:
         create_project_page(entry)

@@ -21,6 +21,6 @@ Inside the folder, include the title of the project in *title.txt*
 Inside the folder, include a text description of the project in *descripton.txt*
 ### images
 - Insert all images (.jpg, .jpeg, .png, .gif) to be included for this project in this folder.
-- Title one image *main.(jpg/jpeg/png/gif)* to be used as the cver photo.
+- Title one image *main.jpg* to be used as the cver photo.
 ### videos
 Insert all videos (.mp4) to be included for this project in this folder.
